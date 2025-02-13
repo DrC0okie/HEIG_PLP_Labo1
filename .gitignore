@@ -1,23 +1,53 @@
-dist
-dist-*
-cabal-dev
+# Ignore build artifacts
+dist/
+dist-newstyle/
+cabal-dev/
 *.o
 *.hi
-*.hie
-*.chi
-*.chs.h
 *.dyn_o
 *.dyn_hi
-.hpc
-.hsenv
-.cabal-sandbox/
-cabal.sandbox.config
 *.prof
 *.aux
 *.hp
 *.eventlog
+*.tix
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.orig
+
+# Ignore binary files
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Ignore Haskell Stack files
 .stack-work/
+
+# Ignore Haskell Cabal files
+cabal.sandbox.config
 cabal.project.local
-cabal.project.local~
-.HTF/
+cabal.project.local~backup
+cabal.project.local~undo
+cabal.project.freeze
+cabal.project.freeze~backup
+cabal.project.freeze~undo
+
+# Ignore Haskell IDE files
+.idea/
+*.iml
+*.hs-boot
+*.hsig-boot
+*.hie
+
+# Ignore Haskell REPL files
+.ghci
 .ghc.environment.*
+src/in
+src/tar
+src/out
